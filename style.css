@@ -1,0 +1,163 @@
+@font-face {
+  font-family: 'iA Writer Quattro S';
+  src: url('webfonts/iAWriterQuattroS-Bold.woff2') format('woff2'),
+      url('webfonts/iAWriterQuattroS-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'iA Writer Quattro S';
+  src: url('webfonts/iAWriterQuattroS-Italic.woff2') format('woff2'),
+      url('webfonts/iAWriterQuattroS-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'iA Writer Quattro S';
+  src: url('webfonts/iAWriterQuattroS-Regular.woff2') format('woff2'),
+      url('webfonts/iAWriterQuattroS-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'iA Writer Quattro S';
+  src: url('webfonts/iAWriterQuattroS-BoldItalic.woff2') format('woff2'),
+      url('webfonts/iAWriterQuattroS-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'iA Writer Quattro S';
+  src: url('webfonts/iAWriterQuattroS-Regular.woff2') format('woff2'),
+      url('webfonts/iAWriterQuattroS-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'iA Writer Quattro S';
+  src: url('webfonts/iAWriterQuattroS-Bold.woff2') format('woff2'),
+      url('webfonts/iAWriterQuattroS-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'iA Writer Quattro S';
+  src: url('webfonts/iAWriterQuattroS-Italic.woff2') format('woff2'),
+      url('webfonts/iAWriterQuattroS-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'iA Writer Quattro S';
+  src: url('webfonts/iAWriterQuattroS-BoldItalic.woff2') format('woff2'),
+      url('webfonts/iAWriterQuattroS-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+body {
+  background: darkslategray;
+  color: coral;
+  font-family: "iA Writer Quattro S", sans-serif;
+  margin: 0;
+  padding: 5vw;
+  min-height: 100vh;
+}
+
+h1, h2 {
+  display: inline;
+}
+
+h1 {
+  line-height: .75;
+}
+
+h2 {
+  font-weight: 100;
+}
+
+a:link, a:visited {
+  color: lightblue;
+  text-decoration: none;
+  transition: color .5s., box-shadow .5s;
+}
+
+a:hover, a:active {
+  color: coral;
+  text-decoration: underline;
+}
+
+.circle {
+  display: block;
+  background: darkslategray;
+  border-radius: 50%;
+  text-align: center;
+  position: relative;
+  box-shadow: 0px 0px 50px;
+  margin: 5vw 0 0 0;
+  padding: 0;
+  width: 90vw;
+  height: 90vw;
+  line-height: 90vw;
+}
+
+/* https://inclusive-components.design/collapsible-sections/ */
+
+.controls {
+ text-align: right;
+ margin-bottom: 1em;
+}
+
+.controls li {
+  display: inline;
+}
+
+button {
+  background: coral;
+  color: darkslategray;
+  border: 0;
+  font-size: 0.85rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+/*
+Custom elements are inline by default
+*/
+toggle-section {
+  display: block;
+}
+
+/*
+Only applies if script runs and 
+`role="region"` is added
+*/
+
+
+toggle-section[role="region"] {
+  border-width: 2px 0;
+  border-style: solid;
+}
+
+toggle-section[role="region"] p, toggle-section[role="region"] li, toggle-section[role="region"] a {
+  color: lightblue;
+}
+
+toggle-section[role="region"] + toggle-section {
+  border-top: 0;
+}
